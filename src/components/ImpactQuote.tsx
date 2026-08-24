@@ -10,8 +10,8 @@ export const ImpactQuote: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
         
         {/* Minimal Monogram Emblem */}
-        <div className="flex justify-center mb-4">
-          <Logo variant="dark-bg" showText={false} size="sm" />
+        <div className="flex justify-center mb-5">
+          <Logo variant="dark-bg" showText={false} size="md" />
         </div>
 
         {/* Impact Title */}

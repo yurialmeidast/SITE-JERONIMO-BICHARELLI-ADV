@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-[92vh] lg:min-h-screen flex items-center pt-28 pb-16 lg:py-24 bg-[#081325] text-white overflow-hidden"
+      className="relative min-h-[92vh] lg:min-h-screen flex items-center pt-32 sm:pt-36 pb-16 lg:pt-40 lg:pb-24 bg-[#081325] text-white overflow-hidden"
     >
       {/* Background Architectural & Atmospheric Gradient */}
       <div className="absolute inset-0 pointer-events-none">

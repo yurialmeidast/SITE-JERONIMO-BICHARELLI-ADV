@@ -37,15 +37,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBlog }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#081325]/95 backdrop-blur-md border-b border-slate-800/80 py-3 shadow-xl shadow-black/20"
-          : "bg-[#081325]/70 backdrop-blur-sm border-b border-white/5 py-4 sm:py-5"
+          ? "bg-[#081325]/95 backdrop-blur-md border-b border-slate-800/80 py-2.5 sm:py-3.5 shadow-xl shadow-black/20"
+          : "bg-[#081325]/85 backdrop-blur-sm border-b border-white/5 py-4 sm:py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Left: Official Brand Logo */}
         <a
           href="#inicio"
-          className="flex items-center group transition-opacity hover:opacity-95 py-1"
+          className="flex items-center group transition-opacity hover:opacity-95 py-0.5"
           aria-label="Jerônimo Bicharelli Advogados - Página Inicial"
         >
           <Logo variant="dark-bg" size="md" />

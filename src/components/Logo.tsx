@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface LogoProps {
   variant?: "dark-bg" | "light-bg";
@@ -10,37 +10,51 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({
   variant = "dark-bg",
   className = "",
-  size = "md"
+  showText = true,
+  size = "md",
 }) => {
-  const isDarkBg = variant === "dark-bg";
-  const [imgSrc, setImgSrc] = useState<string>(
-    isDarkBg ? "/logo_white.png" : "/logo.png"
-  );
+  const isDark = variant === "dark-bg";
 
-  // Sizing tokens calibrated for balanced, elegant proportions
-  const heightClasses = {
-    sm: "h-9 sm:h-10 md:h-11",
-    md: "h-11 sm:h-12 md:h-13",
-    lg: "h-13 sm:h-15 md:h-16",
-    xl: "h-16 sm:h-18 md:h-20"
+  // Exact image sizing classes with 3:1 aspect ratio, adjusted -15% for optimal proportion
+  const sizeConfig = {
+    sm: {
+      full: "h-9 sm:h-10 w-auto",
+      emblem: "h-8 sm:h-9 w-auto",
+    },
+    md: {
+      full: "h-11 sm:h-13 md:h-14 lg:h-15 w-auto",
+      emblem: "h-10 sm:h-11 md:h-13 w-auto",
+    },
+    lg: {
+      full: "h-16 sm:h-18 md:h-22 w-auto",
+      emblem: "h-14 sm:h-16 md:h-18 w-auto",
+    },
+    xl: {
+      full: "h-22 sm:h-26 md:h-32 w-auto",
+      emblem: "h-20 sm:h-24 md:h-28 w-auto",
+    },
   };
 
-  const handleError = () => {
-    // If white/dark variant fails to load, fallback to original uploaded file
-    if (imgSrc !== "/logo_alta_jeronimo_sem_fundo.png") {
-      setImgSrc("/logo_alta_jeronimo_sem_fundo.png");
-    }
-  };
+  const current = sizeConfig[size] || sizeConfig.md;
+
+  if (!showText) {
+    return (
+      <img
+        src={isDark ? "/emblem_oficial_dark.png" : "/emblem_oficial_light.png"}
+        alt="Jerônimo Bicharelli - Monograma"
+        className={`${current.emblem} object-contain select-none drop-shadow-md transition-transform duration-300 group-hover:scale-105 ${className}`}
+        loading="eager"
+      />
+    );
+  }
 
   return (
     <div className={`inline-flex items-center select-none ${className}`}>
       <img
-        src={imgSrc}
+        src={isDark ? "/logo_oficial_dark.png" : "/logo_oficial_trimmed.png"}
         alt="Jerônimo Bicharelli Advogados"
-        onError={handleError}
-        className={`${heightClasses[size]} w-auto object-contain transition-transform duration-200 hover:scale-[1.02] drop-shadow-sm`}
+        className={`${current.full} object-contain select-none drop-shadow-md transition-transform duration-300 group-hover:scale-105`}
         loading="eager"
-        decoding="sync"
       />
     </div>
   );
