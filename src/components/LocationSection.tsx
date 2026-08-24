@@ -17,6 +17,7 @@ import {
   OFFICE_EMAIL,
   WHATSAPP_URL,
 } from "../data/lawFirmData";
+import { Reveal } from "./MotionReveal";
 
 export const LocationSection: React.FC = () => {
   // Google Maps embed URL for Edifício Santa Maria - Rua Quintino Bocaiúva, 240, Centro, Itatiba - SP
@@ -37,7 +38,7 @@ export const LocationSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-10 lg:mb-12">
+        <Reveal direction="up" className="max-w-3xl mb-10 lg:mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="h-px w-8 bg-[#D96B27]" />
             <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -52,13 +53,13 @@ export const LocationSection: React.FC = () => {
           <p className="text-slate-600 text-base sm:text-lg mt-3 font-light leading-relaxed">
             Um espaço preparado para receber clientes com conforto, privacidade e atendimento profissional.
           </p>
-        </div>
+        </Reveal>
 
         {/* Main Grid: Info Cards + Map Frame */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           
           {/* Left Column: Office Details Card */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <Reveal direction="up" delay={0.1} className="lg:col-span-5 flex flex-col justify-between space-y-6">
             
             {/* Main Info Card */}
             <div className="bg-[#081325] text-white p-8 sm:p-9 rounded-3xl shadow-xl relative overflow-hidden border border-slate-800">
@@ -176,10 +177,10 @@ export const LocationSection: React.FC = () => {
               </a>
             </div>
 
-          </div>
+          </Reveal>
 
           {/* Right Column: Google Maps Interactive Embed Frame */}
-          <div className="lg:col-span-7">
+          <Reveal direction="up" delay={0.2} className="lg:col-span-7">
             <div className="h-full min-h-[420px] lg:min-h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 relative group">
               
               {/* Overlay Top Badge */}
@@ -221,7 +222,7 @@ export const LocationSection: React.FC = () => {
               </div>
 
             </div>
-          </div>
+          </Reveal>
 
         </div>
 

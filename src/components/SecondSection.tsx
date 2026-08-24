@@ -15,6 +15,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { OFFICE_ADDRESS, WHATSAPP_URL, TEAM_MEMBERS } from "../data/lawFirmData";
+import { Reveal, StaggerContainer, StaggerItem } from "./MotionReveal";
 
 interface SecondSectionProps {
   onOpenPhotoModal?: (photo: any) => void;
@@ -65,7 +66,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
         {/* PARTE 1: Introdução & Pilares do Escritório */}
         <div>
           {/* Section Header */}
-          <div className="max-w-3xl mb-8 lg:mb-10">
+          <Reveal direction="up" className="max-w-3xl mb-8 lg:mb-10">
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="h-px w-8 bg-[#D96B27]" />
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -76,12 +77,12 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
             <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-normal text-[#081325] leading-tight">
               Direito não precisa ser complicado.
             </h2>
-          </div>
+          </Reveal>
 
           {/* Editorial Two-Column Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Main Copy */}
-            <div className="lg:col-span-7 space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed font-light">
+            <Reveal direction="up" delay={0.1} className="lg:col-span-7 space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed font-light">
               <p className="text-xl font-serif text-[#081325] italic font-medium leading-snug">
                 Cada cliente chega ao escritório com uma realidade, uma preocupação e um objetivo diferente.
               </p>
@@ -90,7 +91,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                 Empresas precisam tomar decisões com segurança. Famílias enfrentam questões patrimoniais e sucessórias. Pessoas físicas podem precisar proteger direitos diante de conflitos, prejuízos ou mudanças importantes da vida.
               </p>
 
-              <div className="p-6 rounded-2xl bg-white border-l-4 border-[#D96B27] shadow-sm my-4">
+              <div className="p-6 rounded-2xl bg-white border-l-4 border-[#D96B27] shadow-sm my-4 transition-all duration-300 hover:shadow-md">
                 <p className="text-[#081325] font-serif text-lg font-semibold tracking-wide">
                   “Por isso, não trabalhamos com respostas prontas.”
                 </p>
@@ -103,10 +104,10 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                 <MapPin className="w-4 h-4 text-[#D96B27] shrink-0" />
                 <span>Edifício Santa Maria • {OFFICE_ADDRESS}</span>
               </div>
-            </div>
+            </Reveal>
 
             {/* Right Visual / Office Real Photos + 3 Pillars (Titles Only) */}
-            <div className="lg:col-span-5 space-y-3.5">
+            <Reveal direction="up" delay={0.2} className="lg:col-span-5 space-y-3.5">
               {/* Main Active Photo Frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-white bg-slate-900 group aspect-[4/3]">
                 <img
@@ -179,7 +180,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
 
@@ -187,7 +188,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
         <div id="advogados" className="pt-8 border-t border-slate-200/80 space-y-10 lg:space-y-12 scroll-mt-24">
           
           {/* Header da Extensão */}
-          <div className="max-w-3xl">
+          <Reveal direction="up" className="max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="h-px w-8 bg-[#D96B27]" />
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -200,10 +201,10 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
             <p className="text-slate-600 text-base mt-3 font-light">
               Atuação próxima e estratégica, respeitando as particularidades de pessoas, famílias e empresas.
             </p>
-          </div>
+          </Reveal>
 
           {/* BLOCO 1: Dr. Marcos Jerônimo (Foto na Esquerda, Texto na Direita) */}
-          <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40">
+          <Reveal direction="up" delay={0.1} className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40 transition-all duration-300 hover:shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Foto do Dr. Marcos Jerônimo na Esquerda */}
@@ -300,10 +301,10 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
               </div>
 
             </div>
-          </div>
+          </Reveal>
 
           {/* BLOCO 2: Dr. Jerody Bicharelli (Foto na Direita, Texto na Esquerda) */}
-          <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40">
+          <Reveal direction="up" delay={0.15} className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40 transition-all duration-300 hover:shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Texto em Resumo sobre Dr. Jerody Bicharelli na Esquerda */}
@@ -400,7 +401,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
               </div>
 
             </div>
-          </div>
+          </Reveal>
 
         </div>
 

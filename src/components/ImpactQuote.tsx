@@ -1,5 +1,6 @@
 import React from "react";
 import { Logo } from "./Logo";
+import { Reveal } from "./MotionReveal";
 
 export const ImpactQuote: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const ImpactQuote: React.FC = () => {
       {/* Background ambient lighting */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,107,39,0.06)_0,transparent_70%)] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <Reveal direction="up" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
         
         {/* Minimal Monogram Emblem */}
         <div className="flex justify-center mb-5">
@@ -32,7 +33,7 @@ export const ImpactQuote: React.FC = () => {
           </p>
         </div>
 
-      </div>
+      </Reveal>
     </section>
   );
 };

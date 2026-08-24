@@ -1,6 +1,7 @@
 import React from "react";
 import { BLOG_POSTS, BlogPost } from "../data/lawFirmData";
 import { ArrowUpRight, BookOpen, Clock, Calendar } from "lucide-react";
+import { Reveal, StaggerContainer, StaggerItem } from "./MotionReveal";
 
 interface EditorialBlogProps {
   onReadPost: (post: BlogPost) => void;
@@ -13,7 +14,7 @@ export const EditorialBlog: React.FC<EditorialBlogProps> = ({ onReadPost, onOpen
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 lg:mb-12 gap-6 md:gap-8">
+        <Reveal direction="up" className="flex flex-col md:flex-row md:items-end justify-between mb-10 lg:mb-12 gap-6 md:gap-8">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="h-px w-8 bg-[#D96B27]" />
@@ -34,18 +35,18 @@ export const EditorialBlog: React.FC<EditorialBlogProps> = ({ onReadPost, onOpen
           <div className="flex-shrink-0">
             <button
               onClick={onOpenAllPosts}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 text-xs uppercase tracking-wider font-semibold transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 text-xs uppercase tracking-wider font-semibold transition-all duration-200 cursor-pointer"
             >
               <BookOpen className="w-4 h-4 text-[#D96B27]" />
               <span>Acessar o Blog</span>
             </button>
           </div>
-        </div>
+        </Reveal>
 
         {/* 3 Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <StaggerContainer staggerDelay={0.08} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {BLOG_POSTS.map((post) => (
-            <article
+            <StaggerItem
               key={post.id}
               onClick={() => onReadPost(post)}
               className="p-8 rounded-2xl bg-[#0b1c36] border border-slate-800/80 hover:border-[#D96B27]/60 hover:bg-[#0f2444] transition-all duration-300 flex flex-col justify-between cursor-pointer group"
@@ -76,9 +77,9 @@ export const EditorialBlog: React.FC<EditorialBlogProps> = ({ onReadPost, onOpen
                 <span className="font-medium">Ler artigo completo</span>
                 <ArrowUpRight className="w-4 h-4 text-[#D96B27] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
-            </article>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
       </div>
     </section>

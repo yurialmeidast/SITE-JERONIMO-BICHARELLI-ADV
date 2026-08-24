@@ -1,6 +1,7 @@
 import React from "react";
 import { INDIVIDUAL_QUESTIONS, WHATSAPP_URL } from "../data/lawFirmData";
 import { ArrowUpRight, HelpCircle } from "lucide-react";
+import { Reveal, StaggerContainer, StaggerItem } from "./MotionReveal";
 
 export const ForIndividuals: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const ForIndividuals: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Heading & Context */}
-          <div className="lg:col-span-6 space-y-6">
+          <Reveal direction="up" className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2">
               <span className="h-px w-8 bg-[#D96B27]" />
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -42,10 +43,10 @@ export const ForIndividuals: React.FC = () => {
                 <ArrowUpRight className="w-4 h-4 text-[#D96B27] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
             </div>
-          </div>
+          </Reveal>
 
           {/* Right Column: Reflective Questions Cards */}
-          <div className="lg:col-span-6">
+          <Reveal direction="up" delay={0.15} className="lg:col-span-6">
             <div className="bg-[#081325] p-8 sm:p-10 lg:p-11 rounded-3xl border border-slate-700/80 shadow-2xl space-y-6 text-white relative overflow-hidden">
               {/* Subtle internal decorative glow */}
               <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#D96B27]/10 rounded-full blur-2xl pointer-events-none" />
@@ -59,25 +60,25 @@ export const ForIndividuals: React.FC = () => {
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+              <StaggerContainer staggerDelay={0.08} className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                 {INDIVIDUAL_QUESTIONS.map((question, idx) => (
-                  <div
+                  <StaggerItem
                     key={idx}
                     className="p-5 rounded-2xl bg-[#0d1e38] border border-slate-700/70 hover:border-[#D96B27]/60 hover:bg-[#122749] transition-all duration-300 flex items-center shadow-sm"
                   >
                     <p className="font-serif text-slate-100 text-base sm:text-lg italic font-normal leading-snug">
                       {question}
                     </p>
-                  </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
 
               <div className="pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs sm:text-sm text-slate-300">
                 <span className="tracking-wide">Orientação clara</span>
                 <span className="text-[#D96B27] font-semibold tracking-wide">Atendimento individualizado</span>
               </div>
             </div>
-          </div>
+          </Reveal>
 
         </div>
 

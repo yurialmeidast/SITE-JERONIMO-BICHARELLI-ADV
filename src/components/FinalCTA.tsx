@@ -1,6 +1,7 @@
 import React from "react";
 import { WHATSAPP_URL, OFFICE_ADDRESS, OFFICE_MAPS_URL } from "../data/lawFirmData";
 import { ArrowUpRight, MessageSquare, ShieldCheck, Clock, MapPin } from "lucide-react";
+import { Reveal } from "./MotionReveal";
 
 export const FinalCTA: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const FinalCTA: React.FC = () => {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
-        <div className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-[#0b1c36] border border-slate-700/80 shadow-2xl space-y-6">
+        <Reveal direction="up" className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-[#0b1c36] border border-slate-700/80 shadow-2xl space-y-6">
           
           {/* Brand Tag */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs tracking-[0.2em] uppercase font-medium">
@@ -64,7 +65,7 @@ export const FinalCTA: React.FC = () => {
             </a>
           </div>
 
-        </div>
+        </Reveal>
 
       </div>
     </section>

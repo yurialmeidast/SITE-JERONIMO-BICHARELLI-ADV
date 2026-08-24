@@ -1,6 +1,7 @@
 import React from "react";
 import { WHATSAPP_URL } from "../data/lawFirmData";
 import { ArrowUpRight, ChevronDown, ShieldCheck, Award, Users } from "lucide-react";
+import { motion } from "motion/react";
 
 export const Hero: React.FC = () => {
   return (
@@ -22,31 +23,56 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Editorial Copy */}
-          <div className="lg:col-span-7 space-y-7 sm:space-y-8 text-left">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
+            className="lg:col-span-7 space-y-7 sm:space-y-8 text-left"
+          >
             
             {/* Office Badge / Label */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-slate-300 text-xs tracking-[0.22em] uppercase font-medium">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-slate-300 text-xs tracking-[0.22em] uppercase font-medium"
+            >
               <span className="w-1.5 h-1.5 rounded-full bg-[#D96B27]" />
               <span>Jerônimo Bicharelli Advogados</span>
-            </div>
+            </motion.div>
 
             {/* Main Headline */}
-            <h1 className="font-serif-title text-4xl sm:text-5xl md:text-6xl lg:text-[4.1rem] leading-[1.08] text-slate-50 font-normal tracking-tight">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="font-serif-title text-4xl sm:text-5xl md:text-6xl lg:text-[4.1rem] leading-[1.08] text-slate-50 font-normal tracking-tight"
+            >
               Advocacia estratégica para pessoas, famílias e empresas.
-            </h1>
+            </motion.h1>
 
             {/* Lead Description */}
-            <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light"
+            >
               <p>
                 Soluções jurídicas conduzidas com análise individual, clareza e estratégia.
               </p>
               <p className="text-slate-400 text-sm sm:text-base">
                 Da prevenção de riscos à defesa de direitos, cada situação é analisada de forma individual para identificar o caminho jurídico mais adequado.
               </p>
-            </div>
+            </motion.div>
 
             {/* CTAs: Primary & Secondary */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+            >
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -64,10 +90,15 @@ export const Hero: React.FC = () => {
                 <span>Conheça o escritório</span>
                 <ChevronDown className="w-4 h-4 text-slate-400" />
               </a>
-            </div>
+            </motion.div>
 
             {/* Trust Indicators */}
-            <div className="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-slate-400 text-xs">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.45 }}
+              className="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-slate-400 text-xs"
+            >
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#D96B27] shrink-0" />
                 <span className="leading-tight">Análise individual e criteriosa</span>
@@ -80,12 +111,17 @@ export const Hero: React.FC = () => {
                 <Users className="w-4 h-4 text-[#D96B27] shrink-0" />
                 <span className="leading-tight">Orientação jurídica clara</span>
               </div>
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
           {/* Right Column: Premium Executive & Corporate Imagery */}
-          <div className="lg:col-span-5 relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 24 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
+            className="lg:col-span-5 relative"
+          >
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Decorative Accent Border Frame */}
@@ -128,7 +164,7 @@ export const Hero: React.FC = () => {
               </div>
 
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

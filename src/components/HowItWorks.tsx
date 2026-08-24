@@ -1,6 +1,7 @@
 import React from "react";
 import { TIMELINE_STEPS, WHATSAPP_URL } from "../data/lawFirmData";
 import { ArrowUpRight } from "lucide-react";
+import { Reveal, StaggerContainer, StaggerItem } from "./MotionReveal";
 
 export const HowItWorks: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ export const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-12">
+        <Reveal direction="up" className="text-center max-w-3xl mx-auto mb-10 lg:mb-12">
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <span className="h-px w-8 bg-[#D96B27]" />
             <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -23,14 +24,14 @@ export const HowItWorks: React.FC = () => {
           <p className="text-slate-600 text-base sm:text-lg mt-3 font-light max-w-xl mx-auto">
             Um processo simples e organizado para compreender sua situação e definir os próximos passos.
           </p>
-        </div>
+        </Reveal>
 
         {/* Sophisticated 4-Step Timeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative mb-10 lg:mb-12">
+        <StaggerContainer staggerDelay={0.09} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative mb-10 lg:mb-12">
           {TIMELINE_STEPS.map((step, index) => (
-            <div
+            <StaggerItem
               key={step.number}
-              className="relative p-8 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between"
+              className="relative p-8 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Step Number Display */}
@@ -57,12 +58,12 @@ export const HowItWorks: React.FC = () => {
                   Jerônimo Bicharelli
                 </span>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
         {/* Central CTA Button */}
-        <div className="text-center">
+        <Reveal direction="up" delay={0.2} className="text-center">
           <a
             href={WHATSAPP_URL}
             target="_blank"
@@ -72,7 +73,7 @@ export const HowItWorks: React.FC = () => {
             <span>Iniciar atendimento</span>
             <ArrowUpRight className="w-4 h-4 text-[#D96B27] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
-        </div>
+        </Reveal>
 
       </div>
     </section>

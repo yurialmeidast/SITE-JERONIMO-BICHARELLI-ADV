@@ -1,6 +1,7 @@
 import React from "react";
 import { DIFFERENTIALS } from "../data/lawFirmData";
 import { UserCheck, MessageSquare, Lightbulb, ShieldAlert, Award } from "lucide-react";
+import { Reveal, StaggerContainer, StaggerItem } from "./MotionReveal";
 
 export const Differentials: React.FC = () => {
   const icons = [
@@ -19,7 +20,7 @@ export const Differentials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-10 lg:mb-12">
+        <Reveal direction="up" className="max-w-3xl mb-10 lg:mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="h-px w-8 bg-[#D96B27]" />
             <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D96B27]">
@@ -30,13 +31,13 @@ export const Differentials: React.FC = () => {
           <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-normal text-slate-50 leading-tight">
             Uma advocacia baseada em análise, estratégia e clareza.
           </h2>
-        </div>
+        </Reveal>
 
         {/* Main Content Layout with Partners Photo & Pillars */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           
           {/* Partners Duo Photograph Card */}
-          <div className="lg:col-span-5 flex flex-col">
+          <Reveal direction="up" delay={0.1} className="lg:col-span-5 flex flex-col">
             <div className="relative h-full min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden border border-slate-800 bg-[#0b1b36] shadow-2xl group flex flex-col justify-end">
               <img
                 src="/unnamed.webp"
@@ -62,12 +63,12 @@ export const Differentials: React.FC = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* 4 Pillars Grid (2x2 on lg) */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+          <StaggerContainer staggerDelay={0.08} className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
             {DIFFERENTIALS.map((diff, index) => (
-              <div
+              <StaggerItem
                 key={index}
                 className="p-6 sm:p-7 rounded-2xl bg-[#0b1b36] border border-slate-800/80 hover:border-slate-700/90 transition-all duration-300 flex flex-col justify-between"
               >
@@ -90,9 +91,9 @@ export const Differentials: React.FC = () => {
                     Pilar 0{index + 1}
                   </span>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
 
         </div>
 
