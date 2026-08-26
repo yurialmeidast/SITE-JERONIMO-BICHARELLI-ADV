@@ -55,7 +55,7 @@ export const HowItWorks: React.FC = () => {
 
               <div className="mt-8 pt-4 border-t border-slate-100/80">
                 <span className="text-xs text-slate-400 font-serif">
-                  Jerônimo Bicharelli
+                  Jeronimo Bicharelli
                 </span>
               </div>
             </StaggerItem>

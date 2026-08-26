@@ -59,7 +59,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Análise Estratégica & Planejamento",
     category: "advogados",
     caption: "Corpo jurídico alinhando teses e estratégias preventivas e contenciosas.",
-    alt: "Advogados do escritório Jerônimo Bicharelli em reunião de alinhamento estratégico"
+    alt: "Advogados do escritório Jeronimo Bicharelli em reunião de alinhamento estratégico"
   },
   {
     id: "socio-advogado",
@@ -67,7 +67,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Atendimento Consultivo Personalizado",
     category: "advogados",
     caption: "Advogado responsável pela condução técnica e consultiva dos casos.",
-    alt: "Advogado do escritório Jerônimo Bicharelli em consultoria jurídica"
+    alt: "Advogado do escritório Jeronimo Bicharelli em consultoria jurídica"
   },
   {
     id: "advogados-equipe",
@@ -75,7 +75,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Corpo Jurídico Especializado",
     category: "advogados",
     caption: "Equipe com atuação focada em Direito Empresarial, Tributário, Famílias e Cível.",
-    alt: "Corpo jurídico do escritório Jerônimo Bicharelli Advogados"
+    alt: "Corpo jurídico do escritório Jeronimo Bicharelli Advogados"
   },
   {
     id: "consultoria-individual",
@@ -99,7 +99,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Sala de Atendimento Executivo",
     category: "estrutura",
     caption: "Ambiente moderno, reservado e acolhedor para reuniões confidenciais.",
-    alt: "Sala de reuniões executiva do escritório Jerônimo Bicharelli em Itatiba"
+    alt: "Sala de reuniões executiva do escritório Jeronimo Bicharelli em Itatiba"
   },
   {
     id: "sala-reuniao-moderna",
@@ -115,7 +115,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Espaço de Trabalho & Conforto",
     category: "estrutura",
     caption: "Instalações planejadas para privacidade, produtividade e recepção de excelência.",
-    alt: "Ambiente do escritório Jerônimo Bicharelli Advogados em Itatiba"
+    alt: "Ambiente do escritório Jeronimo Bicharelli Advogados em Itatiba"
   },
   {
     id: "recepcao-design",
@@ -123,7 +123,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
     title: "Recepção & Edifício Santa Maria",
     category: "estrutura",
     caption: "Localizado no Edifício Santa Maria, no Centro de Itatiba - SP.",
-    alt: "Estrutura do escritório Jerônimo Bicharelli"
+    alt: "Estrutura do escritório Jeronimo Bicharelli"
   },
   {
     id: "biblioteca-juridica",
@@ -146,7 +146,7 @@ export const OFFICE_GALLERY_PHOTOS: OfficePhoto[] = [
 export const TEAM_MEMBERS = [
   {
     id: "dr-marcos-jeronimo",
-    name: "Dr. Marcos Jerônimo",
+    name: "Dr. Marcos Jeronimo",
     role: "Advogado Especialista",
     badge: "Atendimento a Pessoas e Famílias",
     specialties: [
@@ -157,12 +157,12 @@ export const TEAM_MEMBERS = [
     ],
     bio: "Sua atuação é pautada pela análise cuidadosa de cada situação, comunicação próxima e definição da estratégia jurídica adequada às circunstâncias apresentadas, com dedicação a pessoas e famílias.",
     photoUrl: "/unnamed (1).webp",
-    photoAlt: "Dr. Marcos Jerônimo - Advogado Especialista Jerônimo Bicharelli Advogados",
-    whatsappMessage: "Olá, Dr. Marcos Jerônimo! Vim pelo site e gostaria de orientação jurídica."
+    photoAlt: "Dr. Marcos Jeronimo - Advogado Especialista Jeronimo Bicharelli Advogados",
+    whatsappMessage: "Olá, Dr. Marcos Jeronimo! Vim pelo site e gostaria de orientação jurídica."
   },
   {
-    id: "dr-jerody-bicharelli",
-    name: "Dr. Jerody Bicharelli",
+    id: "dr-jherody-bicharelli",
+    name: "Dr. Jherody Bicharelli",
     role: "Advogado Estrategista",
     badge: "Empresarial, Imobiliário & Patrimônio",
     specialties: [
@@ -174,8 +174,8 @@ export const TEAM_MEMBERS = [
     ],
     bio: "Sua atuação combina análise preventiva, estruturação jurídica e condução estratégica de questões empresariais e patrimoniais para empresas, empresários e famílias.",
     photoUrl: "/unnamed (2).webp",
-    photoAlt: "Dr. Jerody Bicharelli - Advogado Estrategista Jerônimo Bicharelli Advogados",
-    whatsappMessage: "Olá, Dr. Jerody Bicharelli! Vim pelo site e gostaria de uma consultoria jurídica."
+    photoAlt: "Dr. Jherody Bicharelli - Advogado Estrategista Jeronimo Bicharelli Advogados",
+    whatsappMessage: "Olá, Dr. Jherody Bicharelli! Vim pelo site e gostaria de uma consultoria jurídica."
   }
 ];
 

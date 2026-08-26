@@ -32,7 +32,7 @@ export const BlogModal: React.FC<BlogModalProps> = ({
         <div className="flex items-center justify-between px-6 py-5 border-b border-slate-800 bg-[#081325]/80">
           <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#D96B27] font-semibold">
             <BookOpen className="w-4 h-4" />
-            <span>Jerônimo Bicharelli Editorial</span>
+            <span>Jeronimo Bicharelli Editorial</span>
           </div>
           <button
             onClick={onClose}

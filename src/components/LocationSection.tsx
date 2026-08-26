@@ -77,7 +77,7 @@ export const LocationSection: React.FC = () => {
                       Edifício Santa Maria
                     </span>
                     <h3 className="font-serif text-lg text-white font-medium">
-                      Jerônimo Bicharelli Advogados
+                      Jeronimo Bicharelli Advogados
                     </h3>
                   </div>
                 </div>
@@ -193,7 +193,7 @@ export const LocationSection: React.FC = () => {
 
               {/* Map Iframe */}
               <iframe
-                title="Localização do Escritório Jerônimo Bicharelli Advogados no Google Maps"
+                title="Localização do Escritório Jeronimo Bicharelli Advogados no Google Maps"
                 src={mapsEmbedUrl}
                 width="100%"
                 height="100%"

@@ -17,7 +17,7 @@ export const FinalCTA: React.FC = () => {
           {/* Brand Tag */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-xs tracking-[0.2em] uppercase font-medium">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D96B27]" />
-            <span>Jerônimo Bicharelli Advogados</span>
+            <span>Jeronimo Bicharelli Advogados</span>
           </div>
 
           {/* Heading */}

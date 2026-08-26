@@ -99,7 +99,7 @@ export const PracticeAreas: React.FC<PracticeAreasProps> = ({ onSelectArea }) =>
                     Área em Destaque
                   </span>
                   <span className="text-xs text-slate-400 font-mono">
-                    Jerônimo Bicharelli Advogados
+                    Jeronimo Bicharelli Advogados
                   </span>
                 </div>
 

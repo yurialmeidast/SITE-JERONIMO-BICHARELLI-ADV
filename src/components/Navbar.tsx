@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBlog }) => {
         <a
           href="#inicio"
           className="flex items-center group transition-opacity hover:opacity-95 py-0.5"
-          aria-label="Jerônimo Bicharelli Advogados - Página Inicial"
+          aria-label="Jeronimo Bicharelli Advogados - Página Inicial"
         >
           <Logo variant="dark-bg" size="md" />
         </a>

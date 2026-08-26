@@ -133,7 +133,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Rights Notice */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4 text-center sm:text-left">
-          <p>© Jerônimo Bicharelli Advogados. Todos os direitos reservados.</p>
+          <p>© Jeronimo Bicharelli Advogados. Todos os direitos reservados.</p>
           <p className="text-slate-400">
             Advocacia e Consultoria Jurídica Estratégica
           </p>

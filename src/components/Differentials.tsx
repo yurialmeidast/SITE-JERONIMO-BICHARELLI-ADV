@@ -41,7 +41,7 @@ export const Differentials: React.FC = () => {
             <div className="relative h-full min-h-[380px] lg:min-h-[460px] rounded-2xl overflow-hidden border border-slate-800 bg-[#0b1b36] shadow-2xl group flex flex-col justify-end">
               <img
                 src="/unnamed.webp"
-                alt="Dr. Marcos Jerônimo e Dr. Jerody Bicharelli - Sócios Jerônimo Bicharelli Advogados"
+                alt="Dr. Marcos Jeronimo e Dr. Jherody Bicharelli - Sócios Jeronimo Bicharelli Advogados"
                 className="absolute inset-0 w-full h-full object-cover object-top filter brightness-[0.97] contrast-[1.03] transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
                 referrerPolicy="no-referrer"
@@ -56,7 +56,7 @@ export const Differentials: React.FC = () => {
                   <span>Sócios Fundadores</span>
                 </div>
                 <h3 className="font-serif-title text-xl sm:text-2xl text-white font-normal leading-snug">
-                  Dr. Marcos Jerônimo &amp; Dr. Jerody Bicharelli
+                  Dr. Marcos Jeronimo &amp; Dr. Jherody Bicharelli
                 </h3>
                 <p className="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
                   Condução próxima e estratégica em todas as etapas da atuação jurídica.

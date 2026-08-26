@@ -48,7 +48,7 @@ export default function App() {
         {/* 1. Hero / Primeira Dobra - Mantém a foto dos prédios */}
         <Hero />
 
-        {/* 2. O Escritório + Extensão com Dr. Marcos Jerônimo e Dr. Jerody Bicharelli */}
+        {/* 2. O Escritório + Extensão com Dr. Marcos Jeronimo e Dr. Jherody Bicharelli */}
         <SecondSection />
 
         {/* 3. Áreas de Atuação */}

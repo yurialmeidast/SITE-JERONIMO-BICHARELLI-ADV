@@ -78,7 +78,7 @@ export const AreaModal: React.FC<AreaModalProps> = ({
           {/* Action CTA */}
           <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs text-slate-400">
-              Jerônimo Bicharelli Advogados
+              Jeronimo Bicharelli Advogados
             </span>
             <a
               href={WHATSAPP_URL}

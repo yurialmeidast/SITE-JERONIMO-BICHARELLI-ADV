@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
               className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-slate-300 text-xs tracking-[0.22em] uppercase font-medium"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#D96B27]" />
-              <span>Jerônimo Bicharelli Advogados</span>
+              <span>Jeronimo Bicharelli Advogados</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -131,7 +131,7 @@ export const Hero: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
-                  alt="Arquitetura corporativa e centro financeiro - Jerônimo Bicharelli Advogados"
+                  alt="Arquitetura corporativa e centro financeiro - Jeronimo Bicharelli Advogados"
                   className="w-full h-[420px] sm:h-[480px] lg:h-[520px] object-cover object-center filter brightness-[0.92] contrast-[1.05] transition-transform duration-700 hover:scale-105"
                   loading="eager"
                 />
@@ -154,13 +154,6 @@ export const Hero: React.FC = () => {
                   </div>
                 </div>
 
-              </div>
-
-              {/* Subtle floating badge */}
-              <div className="hidden sm:block absolute -top-4 -left-4 px-4 py-2.5 rounded-xl bg-[#0d1f38] border border-slate-700 shadow-xl">
-                <span className="text-[11px] font-serif uppercase tracking-widest text-[#D96B27]">
-                  Jerônimo Bicharelli
-                </span>
               </div>
 
             </div>

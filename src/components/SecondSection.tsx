@@ -23,7 +23,7 @@ interface SecondSectionProps {
 
 export const SecondSection: React.FC<SecondSectionProps> = () => {
   const drMarcos = TEAM_MEMBERS[0];
-  const drJerody = TEAM_MEMBERS[1];
+  const drJherody = TEAM_MEMBERS[1];
 
   const [activePhoto, setActivePhoto] = React.useState(0);
 
@@ -31,7 +31,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
     {
       url: "/IMG_8235.jpg",
       title: "Recepção & Identidade",
-      alt: "Placa oficial Jerônimo Bicharelli Advogados no Edifício Santa Maria",
+      alt: "Placa oficial Jeronimo Bicharelli Advogados no Edifício Santa Maria",
     },
     {
       url: "/unnamed (3).webp",
@@ -46,11 +46,11 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
   ];
 
   const marcosWhatsApp = `https://wa.me/5511921556211?text=${encodeURIComponent(
-    "Olá, Dr. Marcos Jerônimo! Vim pelo site e gostaria de tirar dúvidas sobre meu caso."
+    "Olá, Dr. Marcos Jeronimo! Vim pelo site e gostaria de tirar dúvidas sobre meu caso."
   )}`;
 
-  const jerodyWhatsApp = `https://wa.me/5511921556211?text=${encodeURIComponent(
-    "Olá, Dr. Jerody Bicharelli! Vim pelo site e gostaria de uma consultoria jurídica."
+  const jherodyWhatsApp = `https://wa.me/5511921556211?text=${encodeURIComponent(
+    "Olá, Dr. Jherody Bicharelli! Vim pelo site e gostaria de uma consultoria jurídica."
   )}`;
 
   return (
@@ -203,16 +203,16 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
             </p>
           </Reveal>
 
-          {/* BLOCO 1: Dr. Marcos Jerônimo (Foto na Esquerda, Texto na Direita) */}
+          {/* BLOCO 1: Dr. Marcos Jeronimo (Foto na Esquerda, Texto na Direita) */}
           <Reveal direction="up" delay={0.1} className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40 transition-all duration-300 hover:shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
-              {/* Foto do Dr. Marcos Jerônimo na Esquerda */}
+              {/* Foto do Dr. Marcos Jeronimo na Esquerda */}
               <div className="lg:col-span-5">
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/5] sm:aspect-[3/4] max-h-[460px] w-full shadow-lg border-2 border-slate-100 group">
                   <img
                     src="/unnamed (1).webp"
-                    alt="Dr. Marcos Jerônimo - Advogado especialista em Pessoas Físicas, Família, Trabalhista e Criminal"
+                    alt="Dr. Marcos Jeronimo - Advogado especialista em Pessoas Físicas, Família, Trabalhista e Criminal"
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#081325]/80 via-transparent to-transparent opacity-80" />
@@ -222,13 +222,13 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                       Advogado Especialista
                     </span>
                     <h4 className="font-serif text-xl font-medium text-white">
-                      Dr. Marcos Jerônimo
+                      Dr. Marcos Jeronimo
                     </h4>
                   </div>
                 </div>
               </div>
 
-              {/* Texto em Resumo sobre Dr. Marcos Jerônimo na Direita */}
+              {/* Texto em Resumo sobre Dr. Marcos Jeronimo na Direita */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/60 text-[#D96B27] text-xs font-semibold tracking-wide mb-3">
@@ -237,7 +237,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                   </div>
 
                   <h4 className="font-serif-title text-2xl sm:text-3xl text-[#081325] font-normal">
-                    Dr. Marcos Jerônimo
+                    Dr. Marcos Jeronimo
                   </h4>
                   <p className="text-slate-500 text-xs sm:text-sm font-medium mt-0.5">
                     Advogado Especialista • Atendimento a Pessoas e Famílias
@@ -246,7 +246,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
 
                 <div className="space-y-4 text-slate-700 text-base leading-relaxed font-light">
                   <p>
-                    O <strong>Dr. Marcos Jerônimo</strong> atua no atendimento a <strong>pessoas e famílias</strong>, com foco em Direito de Família, Pensão Alimentícia, Direito Trabalhista e Direito Criminal.
+                    O <strong>Dr. Marcos Jeronimo</strong> atua no atendimento a <strong>pessoas e famílias</strong>, com foco em Direito de Família, Pensão Alimentícia, Direito Trabalhista e Direito Criminal.
                   </p>
                   <p>
                     Sua atuação é pautada pela análise cuidadosa de cada situação, comunicação próxima e definição da estratégia jurídica adequada às circunstâncias apresentadas.
@@ -294,7 +294,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#081325] hover:bg-[#12233f] text-white text-xs uppercase tracking-wider font-semibold shadow-md hover:shadow-lg transition-all duration-200 group"
                   >
-                    <span>Falar com o Dr. Marcos Jerônimo</span>
+                    <span>Falar com o Dr. Marcos Jeronimo</span>
                     <ArrowUpRight className="w-4 h-4 text-[#D96B27] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
@@ -303,11 +303,11 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
             </div>
           </Reveal>
 
-          {/* BLOCO 2: Dr. Jerody Bicharelli (Foto na Direita, Texto na Esquerda) */}
+          {/* BLOCO 2: Dr. Jherody Bicharelli (Foto na Direita, Texto na Esquerda) */}
           <Reveal direction="up" delay={0.15} className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/80 shadow-xl shadow-slate-200/40 transition-all duration-300 hover:shadow-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
-              {/* Texto em Resumo sobre Dr. Jerody Bicharelli na Esquerda */}
+              {/* Texto em Resumo sobre Dr. Jherody Bicharelli na Esquerda */}
               <div className="lg:col-span-7 space-y-6 order-2 lg:order-1">
                 <div>
                   <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/60 text-[#D96B27] text-xs font-semibold tracking-wide mb-3">
@@ -316,7 +316,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                   </div>
 
                   <h4 className="font-serif-title text-2xl sm:text-3xl text-[#081325] font-normal">
-                    Dr. Jerody Bicharelli
+                    Dr. Jherody Bicharelli
                   </h4>
                   <p className="text-slate-500 text-xs sm:text-sm font-medium mt-0.5">
                     Advogado Estrategista • Consultoria Empresarial e Patrimonial
@@ -325,14 +325,14 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
 
                 <div className="space-y-4 text-slate-700 text-base leading-relaxed font-light">
                   <p>
-                    O <strong>Dr. Jerody Bicharelli</strong> atua com foco em <strong>Direito Empresarial, contratos, Direito Imobiliário, indenizações, inventários e planejamento sucessório</strong>.
+                    O <strong>Dr. Jherody Bicharelli</strong> atua com foco em <strong>Direito Empresarial, contratos, Direito Imobiliário, indenizações, inventários e planejamento sucessório</strong>.
                   </p>
                   <p>
                     Sua atuação combina análise preventiva, estruturação jurídica e condução estratégica de questões empresariais e patrimoniais para empresas, empresários e famílias.
                   </p>
                 </div>
 
-                {/* Áreas de Atuação do Dr. Jerody */}
+                {/* Áreas de Atuação do Dr. Jherody */}
                 <div>
                   <h5 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-3">
                     Principais Áreas de Atendimento:
@@ -368,23 +368,23 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                 {/* Botão de Contato */}
                 <div className="pt-2">
                   <a
-                    href={jerodyWhatsApp}
+                    href={jherodyWhatsApp}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-[#081325] hover:bg-[#12233f] text-white text-xs uppercase tracking-wider font-semibold shadow-md hover:shadow-lg transition-all duration-200 group"
                   >
-                    <span>Falar com o Dr. Jerody Bicharelli</span>
+                    <span>Falar com o Dr. Jherody Bicharelli</span>
                     <ArrowUpRight className="w-4 h-4 text-[#D96B27] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
               </div>
 
-              {/* Foto do Dr. Jerody Bicharelli na Direita */}
+              {/* Foto do Dr. Jherody Bicharelli na Direita */}
               <div className="lg:col-span-5 order-1 lg:order-2">
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/5] sm:aspect-[3/4] max-h-[460px] w-full shadow-lg border-2 border-slate-100 group">
                   <img
                     src="/unnamed (2).webp"
-                    alt="Dr. Jerody Bicharelli - Advogado especialista em Direito Empresarial, Imobiliário, Indenização e Inventário"
+                    alt="Dr. Jherody Bicharelli - Advogado especialista em Direito Empresarial, Imobiliário, Indenização e Inventário"
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#081325]/80 via-transparent to-transparent opacity-80" />
@@ -394,7 +394,7 @@ export const SecondSection: React.FC<SecondSectionProps> = () => {
                       Advogado Estrategista
                     </span>
                     <h4 className="font-serif text-xl font-medium text-white">
-                      Dr. Jerody Bicharelli
+                      Dr. Jherody Bicharelli
                     </h4>
                   </div>
                 </div>
